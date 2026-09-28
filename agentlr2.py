@@ -236,26 +236,20 @@ def main():
     start = (rover.x, rover.y)
     goal = (0, 0)
 
-    print("\n" + "=" * 50)
     print("#1")
-    print("=" * 50)
     print("Початковий стан:", start)
     print("Цільовий стан:", goal)
     print("Дії: up, down, left, right")
     print("Обмеження: межі карти та перешкоди")
 
     #2
-    print("\n" + "=" * 50)
     print("#2")
-    print("=" * 50)
 
     bfs_path, bfs_nodes = bfs(start, goal, env)
     dfs_path, dfs_nodes = dfs(start, goal, env)
 
     #3
-    print("\n" + "=" * 50)
     print("#3")
-    print("=" * 50)
     print("\nBFS:")
 
     if bfs_path:
@@ -284,9 +278,7 @@ def main():
     else: print("Шлях не знайдено.")
 
     #4
-    print("\n" + "=" * 50)
     print("#4")
-    print("=" * 50)
     print("\nПорівняння:")
 
     print(
